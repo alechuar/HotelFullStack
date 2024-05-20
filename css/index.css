@@ -213,6 +213,14 @@ header{
     width: 90vw;
 }
 
+
+
+.ubicacion{
+    width: 100vw;
+}
+
+
+
 .footer{
     display: flex;
     flex-direction: column;
