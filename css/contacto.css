@@ -17,10 +17,10 @@
 header{
     display: flex;
     justify-content: space-between;
-    height: 350px;
+    height: 850px;
     width: 100vw;
     background: linear-gradient(rgba(5, 7, 12, 0.5),rgba(5, 7, 12, 0.5)),
-    url('/img/header6.png');
+    url('/img/header4.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -66,6 +66,152 @@ header{
 
 
 
+.main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -540px;
+}
+
+.h1-main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    width: 75%;
+    max-width: 1300px;
+    padding: 80px;
+}
+
+
+.formulario{
+    background: #212121;
+    color: white;
+    position: relative;
+    width: 70vw;
+    /* max-width: 1300px; */
+    margin-top: 50px;
+    padding: 60px 40px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-areas: 'titulo titulo nom-label . ape-label'
+                        'titulo titulo nom-input . ape-input'
+                        'titulo titulo correo-label tel-label habitaciones-label'
+                        '. . correo-input tel-input'
+                        '. . consulta-label consulta-textarea'
+                        'check-input enviar-btn limpiar-btn'
+                        '. . solicitud solicitud solicitud';
+}
+
+
+.h1-form{
+    grid-area: titulo;
+    text-align: center;
+}
+
+.boton-form{
+    grid-area: boton-form;
+    display: flex;
+    justify-content: center;
+    padding: 20px 15px;
+    background: #212121;
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgb(129, 129, 129);
+}
+
+.boton-form:hover{
+    border: 1.5px solid white;
+    background: #3c3c3c;
+    cursor: pointer;
+    scale: 1.03;
+}
+
+.nom{
+    grid-area: nom-label;
+}
+#nom{
+    grid-area: nom-input;
+}
+
+.ape{
+    grid-area: ape-label;
+    
+}
+
+#ape{
+    grid-area: ape-input;
+    
+}
+
+.correo{
+    grid-area: correo-label;
+    
+}
+
+#correo{
+    grid-area: correo-input;
+    
+}
+
+.tel{
+    grid-area: tel-label;
+    
+}
+
+#tel{
+    grid-area: tel-input;
+    
+}
+
+.consulta{
+    grid-area: consulta-label;
+    
+}
+
+#consulta{
+    grid-area: consulta-textarea;
+    
+}
+
+.check-btn{
+    grid-area: check-btn;
+}
+
+#check{
+    grid-area: check-input;
+}
+
+.cotizar{
+    grid-area: cotizar;
+    background: rgb(54, 117, 219);
+    color: white;
+    font-size: 1.1rem;
+    border: 1px solid rgb(129, 129, 129);
+}
+
+.cotizar:hover{
+    border: 1.5px solid white;
+    background: rgb(34, 84, 164);
+    scale: 1.03;
+}
+
+.solicitud{
+    grid-area: solicitud;
+    display: flex;
+    /* color: greenyellow; */
+}
+
+
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
+}
 
 .footer{
     display: flex;
@@ -97,6 +243,20 @@ header{
         padding: 70px 100px;
     }
     
+    .main{
+        margin-top: -600px;
+    }
+
+    .h1-main{
+        margin-top: 0px;
+        font-size: 1.5rem;
+        width: 90%;
+    }
+
+    .formulario{
+        margin-top: 0;
+    }
+
     .logo{
         width: 200px;
         height: 100px;
@@ -131,6 +291,7 @@ header{
         padding: 20px;
         margin-top: 50px;
     }
+
 }
 
 @media (max-width: 1000px) {
@@ -154,6 +315,35 @@ header{
         padding: 10px 20px 0 0 ;
         margin: 80px 0 0 20px ;
     }
+
+    .formulario{
+        grid-template-areas:
+                            'titulo'
+                            'nom-label'
+                            'nom-input'
+                            'ape-label' 
+                            'ape-input'
+                            'correo-label'
+                            'correo-input'
+                            'tel-label'
+                            'tel-input'
+                            'consulta-label' 
+                            'consulta-textarea'
+                            'check-input'                           
+                            'enviar-btn'
+                            'limpiar-btn'
+                            'solicitud'
+                            'solicitud';
+    }
+    
+    .boton-form{
+        margin-top: 25px;
+    }
+
+    .cotizar{
+        margin-top: 50px;
+    }
+
 
 }
 
@@ -225,6 +415,49 @@ header{
         padding: 35px;
     }
     
+    .h1-main{
+        font-size: 1rem;
+        color: white;
+        width: 75%;
+        padding: 10px;
+        margin-bottom: 120px;
+    }
+    
+    .formulario{
+        padding: 45px;
+        grid-template-areas:
+                            'titulo'
+                            'boton-form'
+                            'nom-label'
+                            'nom-input'
+                            'ape-label' 
+                            'ape-input'
+                            'correo-label'
+                            'correo-input'
+                            'tel-label'
+                            'tel-input'
+                            'consulta-label' 
+                            'consulta-textarea'
+                            'check-input'                           
+                            'enviar-btn'
+                            'limpiar-btn'
+                            'solicitud'
+                            'solicitud';
+    }
+
+    .h1-form{
+        font-size: 1rem;
+    }
+
+    .boton-form{
+        margin: 25px 0px 20px 0px;
+        padding: 10px;
+    }
+
+    .cotizar{
+        margin: 20px 0 0 0;
+    }
+
     .social *{
         width: 30px;
         margin: 10px;
@@ -234,6 +467,10 @@ header{
 }
 
 @media (max-width: 400px) {
+    .formulario{
+        padding: 20px;
+    }
+
     .social *{
         width: 30px;
         margin: 5px;
