@@ -55,7 +55,7 @@ function enviarFormulario() {
     }
 
     //realizamos validación de formulario(fechas y mail correctos, y resto de los campos completados)
-    if ( checkin <= fechaActual || checkout <= checkin || cantidadAdultos === "" || cantidadMenores === "" || cantidadHabitaciones === "" || validarmail(email) === false ) {
+    if ( checkin <= fechaActual || checkout <= checkin || cantidadAdultos <= "0" || cantidadMenores < "0" || cantidadHabitaciones <= "0" || validarmail(email) === false ) {
     document.getElementById("solicitud").textContent = 
     `Verifique los datos ingresados`
     } else {
