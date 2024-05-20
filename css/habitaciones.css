@@ -200,6 +200,10 @@ main{
     width: 100vw;
 }
 
+.bg{
+    width: 100vw;
+}
+
 .bg-img .bg-flotante{
     width: 80%;
     margin-top: -200px;
