@@ -93,15 +93,15 @@ header{
     padding: 60px 40px;
     display: grid;
     grid-gap: 25px;
-    grid-template-areas:'titulo titulo consulta-label .'
-                        'titulo titulo consulta-textarea consulta-textar'
-                        'nom-label ape-label . .'
-                        'nom-input ape-input . .'
-                        'correo-label tel-label . .'
-                        'correo-input tel-input . .'
-                        'campos . . .'
-                        'check-btn check-label . .'
-                        'limpiar-btn limpiar-btn enviar-btn enviar-btn';
+    grid-template-areas:'titulo titulo consulta-label . .'
+                        'titulo titulo consulta-textarea consulta-textarea consulta-textarea'
+                        'nom-label ape-label consulta-textarea consulta-textarea consulta-textarea'
+                        'nom-input ape-input consulta-textarea consulta-textarea consulta-textarea'
+                        'correo-label tel-label consulta-textarea consulta-textarea consulta-textarea'
+                        'correo-input tel-input consulta-textarea consulta-textarea consulta-textarea'
+                        'campos . consulta-textarea consulta-textarea consulta-textarea'
+                        'check-btn check-label consulta-textarea consulta-textarea consulta-textarea'
+                        'limpiar-btn limpiar-btn enviar-btn enviar-btn enviar-btn';
 }
 
 .iframe{
