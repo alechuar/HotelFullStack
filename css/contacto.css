@@ -89,7 +89,6 @@ header{
     position: relative;
     align-self: center;
     /* max-width: 1300px; */
-    margin:60px 60px;
     padding: 60px 40px;
     display: grid;
     grid-gap: 25px;
@@ -105,6 +104,9 @@ header{
 }
 
 .iframe{
+    background-color: rgb(54, 117, 219);
+    color: white;
+    margin-bottom: 80px;
     align-items: center;
     width: 100%;
 }
@@ -112,6 +114,10 @@ header{
 
 .h1-form{
     grid-area: titulo;
+    text-align: center;
+}
+
+.h2{
     text-align: center;
 }
 
@@ -266,19 +272,19 @@ header{
 
 @media (max-width: 1250px) {
     .formulario{
+        position: relative;
         padding: 60px 40px;
-        grid-row-gap: 10px;
+        grid-row-gap: 20px;
         grid-column-gap: 20px;
         grid-template-areas:
-                            'titulo titulo titulo'
-                            'nom-label nom-label nom-label'
-                            'check-in-label . check-out-label'
-                            'check-in-input . check-out-input'
-                            'adultos-label menores-label habitaciones-label'
-                            'adultos-input menores-input habitaciones-input'
-                            'email-label email-input email-input'
-                            'cotizar cotizar cotizar'
-                            'solicitud solicitud solicitud';
+                            'titulo titulo titulo consulta-label'
+                            'nom-label nom-input consulta-textarea consulta-textarea'
+                            'ape-label ape-input consulta-textarea consulta-textarea'
+                            'correo-label correo-input consulta-textarea consulta-textarea'
+                            'tel-label tel-input consulta-textarea consulta-textarea'
+                            'campos . consulta-textarea consulta-textarea'
+                            'check-btn check-label consulta-textarea consulta-textarea'
+                            'limpiar-btn limpiar-btn enviar-btn enviar-btn';
     }
 
     .boton-form{
@@ -316,20 +322,31 @@ header{
     }
 
     .formulario{
-        
+        justify-content: center;
+        padding: 60px 40px;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
         grid-template-areas:
                             'titulo titulo'
                             'nom-label nom-input'
                             'ape-label ape-input'
                             'correo-label correo-input'
                             'tel-label tel-input'
-                            'consulta-label' 
-                            'consulta-textarea'
-                            'check-btn'                           
-                            'enviar-btn'
-                            'limpiar-btn'
-                            'solicitud'
-                            'solicitud-tel';
+                            'consulta-label .' 
+                            'consulta-textarea consulta-textarea'
+                            'consulta-textarea consulta-textarea'
+                            'consulta-textarea consulta-textarea'
+                            'consulta-textarea consulta-textarea'
+                            'consulta-textarea consulta-textarea'
+                            'consulta-textarea consulta-textarea'
+                            'consulta-textarea consulta-textarea'
+                            'consulta-textarea consulta-textarea'
+                            'consulta-textarea consulta-textarea'
+                            'consulta-textarea consulta-textarea'
+                            'campos .' 
+                            'check-btn check-label'                           
+                            'enviar-btn enviar-btn '
+                            'limpiar-btn limpiar-btn';
     }
     
     .boton-form{
@@ -420,11 +437,10 @@ header{
     }
     
     .formulario{
-        
+        justify-content: center;
         width: 100vw;    
         grid-template-areas:
                             'titulo'
-                            'boton-form'
                             'nom-label'
                             'nom-input'
                             'ape-label' 
@@ -435,11 +451,20 @@ header{
                             'tel-input'
                             'consulta-label' 
                             'consulta-textarea'
-                            'check-btn'                           
+                            'consulta-textarea'
+                            'consulta-textarea'
+                            'consulta-textarea'
+                            'consulta-textarea'
+                            'consulta-textarea'
+                            'consulta-textarea'
+                            'consulta-textarea'
+                            'consulta-textarea'
+                            'consulta-textarea'
+                            'campos'
+                            'check-btn'
+                            'check-label'                           
                             'enviar-btn'
-                            'limpiar-btn'
-                            'solicitud'
-                            'solicitud-tel';
+                            'limpiar-btn';                          ;
     }
 
     .h1-form{
