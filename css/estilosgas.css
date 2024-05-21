@@ -23,7 +23,7 @@
 header{
     display: flex;
     justify-content: space-between;
-    height: 900px;
+    height: 850px;
     width: 100vw;
     background: linear-gradient(rgba(5, 7, 12, 0.5),rgba(5, 7, 12, 0.5)),
     url('/img/header4.png');
@@ -71,125 +71,32 @@ header{
 .main{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    margin: -600px 0 0 0;
-    padding: 20px;
-    width: 100vw;
+    margin-top: -540px;
 }
 
 .h1-main{
+    position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
+    font-size: 3rem;
     font-style: italic;
     color: white;
     font-style: italic;
     width: 100%;
     max-width: 1300px;
-    align-items: center;
-}
-
-
-h1{
-    font-size: 1.3rem;
-    margin: 0 100px 0 100px;
-}
-
-.p-main{
-    font-size: 1.2rem;
-    color: white;
-    text-align: center;
-    font-style: italic;
-    margin: 70px;
-    padding: 0 60px;
-}
-
-h3{
-    font-size: 1.5rem;
-    padding: 0 150px 30px 150px;
-    
-}
-
-p{
-    font-size: 1.2rem;
-}
-
-.contenedor-gastro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 80px;
-    flex-wrap: wrap;
-    width: 100vw;
-    gap: 20px;
-}
-
-.image-gastro{
-    width: 500px;
-    filter: grayscale(100%);
-    transition: all ease 0.5s;
-}
-
-.image-gastro:hover{
-    scale: 145%;
-    filter: grayscale(0%);
-    position: relative;
-    z-index: 2;
-}
-
-
-.gastro-2{
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    font-size: 1rem;
-    font-style: italic;
-    color: black;
-    width: 100%;
-    max-width: 1300px;
-    padding: 50px;
     align-content: center;
 }
 
-
-.bg-img{
+.contenido{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100vw;
+    justify-content: center;
+    width: 90vw;
 }
-
-.bg{
-    width: 100vw;
-}
-
-.bg-img h1{
-    margin-top: -30vw;
-    color: white;
-    font-size: 2.5rem;
-}
-
-.bg-img .bg-flotante{
-    width: 80%;
-    margin-top: 15vw;
-}
-
-
-
-aside{
-    color: black;
-    width: 100%;
-    max-width: 1300px;
-    padding: 100px 140px 0 140px;
-    color: #0394bb;
-    
-}
-
-
-
-
-
 
 .footer{
     display: flex;
@@ -213,11 +120,67 @@ aside{
     margin: 20px;
 }
 
+aside{
+    text-align: justify;
+    font-size: 2rem;
+    font-style: italic;
+    color: black;
+    width: 100%;
+    max-width: 1300px;
+    padding: 40px;
 
+}
+.image{
+    display: block;
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: antiquewhite;
+}
+.thumbnail.hover{
+    transform: translate(-4px);
+}
+.img-conteiner:hover .overlay{
+    opacity: 1;
+}
 
+.gastro-2{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    color: black;
+    width: 100%;
+    max-width: 1300px;
+    padding: 40px;
+    align-content: center;
+}
+h1{
+    font-size: 4rem
+}
+h2{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+h3{
+    font-size: 3rem;
+
+}
 
 @media (max-width: 1400px) {
-    
+
     header{
         padding: 70px 100px;
     }
@@ -228,18 +191,10 @@ aside{
         margin-top: 20px;
     }
 
-    h1{
-        font-size: 2.7rem;
-        margin: 0 100px 0 100px;
-    }
-
-
-    
-    
 }
 
 @media (max-width: 1250px) {
-    
+
 }
 
 @media (max-width: 1000px) {

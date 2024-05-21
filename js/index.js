@@ -57,13 +57,13 @@ function enviarFormulario() {
     //realizamos validación de formulario(fechas y mail correctos, y resto de los campos completados)
 
 
-    if ( checkin <= fechaActual || checkout <= checkin ||isNaN(checkout) || isNaN(checkin) ) {
-       document.getElementById("solicitud").textContent = 
-       `Verifique las fechas ingresadas`
-    }else if (tipoHabitacion === "" ) {
+    if ( checkin <= fechaActual || checkout <= checkin || isNaN(checkout) || isNaN(checkin) ) {
+        document.getElementById("solicitud").textContent = 
+        `Verifique las fechas ingresadas`
+    } else if (tipoHabitacion === "" ) {
         document.getElementById("solicitud").textContent = 
         `Debe seleccionar un tipo de habitación`
-    }else if (cantidadAdultos <= "0" || cantidadMenores < "0" ) {
+    } else if (cantidadAdultos <= "0" || cantidadMenores < "0" ) {
         document.getElementById("solicitud").textContent = 
         `Verifique las cantidades de huespedes ingresadas`
     } else if (cantidadHabitaciones <= "0" ) {
@@ -71,8 +71,7 @@ function enviarFormulario() {
         `La cantidad de habitaciones debe ser mayor a 0`
     } else if (validarmail(email) === false ){
         document.getElementById("solicitud").textContent = 
-       `El email no es valido`
-
+        `El email no es valido`
     } else {
         document.getElementById("solicitud").innerHTML = `
         Solicitud enviada correctamente.</br>
@@ -113,5 +112,4 @@ function enviarFormulario() {
         document.getElementById("habitaciones").value = ""
         document.getElementById("email").value = ""
     }
-   
 }
