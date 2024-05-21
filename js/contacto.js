@@ -75,4 +75,6 @@ function validarFormulario() {
     document.getElementById("consulta").value = ""
     document.getElementById("tel").value = ""
     check.checked = false
+    document.getElementById("solicitud").textContent = ""
+    document.getElementById("solicitud-tel").textContent = ""
     }
