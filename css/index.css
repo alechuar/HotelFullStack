@@ -96,8 +96,8 @@ header{
     padding: 60px 40px;
     display: grid;
     grid-gap: 25px;
-    grid-template-areas: 'titulo titulo check-in-label . check-out-label'
-                        'titulo titulo check-in-input . check-out-input'
+    grid-template-areas: 'titulo titulo check-in-label  check-out-label tipoHabitacion-label'
+                        'titulo titulo check-in-input  check-out-input tipoHabitacion-input'
                         'titulo titulo adultos-label menores-label habitaciones-label'
                         '. . adultos-input menores-input habitaciones-input'
                         '. . email-label email-input email-input'
@@ -143,6 +143,16 @@ header{
 
 #check-out{
     grid-area: check-out-input;
+    
+}
+
+.tipoHabitacion{
+    grid-area: tipoHabitacion-label;
+    
+}
+
+#tipoHabitacion{
+    grid-area: tipoHabitacion-input;
     
 }
 
@@ -281,8 +291,8 @@ header{
         grid-template-areas:
                             'titulo titulo titulo'
                             'boton-form boton-form boton-form'
-                            'check-in-label . check-out-label'
-                            'check-in-input . check-out-input'
+                            'check-in-label  check-out-label  tipoHabitacion-label'
+                            'check-in-input  check-out-input  tipoHabitacion-input'
                             'adultos-label menores-label habitaciones-label'
                             'adultos-input menores-input habitaciones-input'
                             'email-label email-input email-input'
@@ -330,6 +340,7 @@ header{
                             'boton-form boton-form'
                             'check-in-label check-in-input'
                             'check-out-label check-out-input'
+                            'tipoHabitacion-label tipoHabitacion-input'
                             'adultos-label adultos-input'
                             'menores-label menores-input'
                             'habitaciones-label habitaciones-input'
@@ -434,6 +445,8 @@ header{
                             'check-in-input'
                             'check-out-label' 
                             'check-out-input'
+                            'tipoHabitacion-label' 
+                            'tipoHabitacion-input'
                             'adultos-label'
                             'adultos-input'
                             'menores-label'
