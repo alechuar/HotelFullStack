@@ -100,7 +100,9 @@ header{
                         'correo-input tel-input consulta-textarea consulta-textarea consulta-textarea'
                         'campos . consulta-textarea consulta-textarea consulta-textarea'
                         'check-btn check-label consulta-textarea consulta-textarea consulta-textarea'
-                        'limpiar-btn limpiar-btn enviar-btn enviar-btn enviar-btn';
+                        'limpiar-btn limpiar-btn enviar-btn enviar-btn enviar-btn'
+                        'solicitud solicitud solicitud solicitud solicitud'
+                        'solicitud-tel solicitud-tel solicitud-tel solicitud-tel solicitud-tel';
 }
 
 .iframe{
@@ -211,6 +213,18 @@ header{
     grid-area: campos;
 }
 
+.solicitud{
+    grid-area: solicitud;
+    display: flex;
+    /* color: greenyellow; */
+}
+
+.solicitud-tel{
+    grid-area: solicitud-tel;
+    display: flex;
+    /* color: greenyellow; */
+}
+
 .contenido{
     display: flex;
     flex-direction: column;
@@ -284,7 +298,9 @@ header{
                             'tel-label tel-input consulta-textarea consulta-textarea'
                             'campos . consulta-textarea consulta-textarea'
                             'check-btn check-label consulta-textarea consulta-textarea'
-                            'limpiar-btn limpiar-btn enviar-btn enviar-btn';
+                            'limpiar-btn limpiar-btn enviar-btn enviar-btn'
+                            'solicitud solicitud solicitud solicitud'
+                            'solicitud-tel solicitud-tel solicitud-tel solicitud-tel';
     }
 
     .boton-form{
@@ -346,7 +362,9 @@ header{
                             'campos .' 
                             'check-btn check-label'                           
                             'enviar-btn enviar-btn '
-                            'limpiar-btn limpiar-btn';
+                            'limpiar-btn limpiar-btn'
+                            'solicitud solicitud'
+                            'solicitud-tel solicitud-tel';
     }
     
     .boton-form{
@@ -464,7 +482,9 @@ header{
                             'check-btn'
                             'check-label'                           
                             'enviar-btn'
-                            'limpiar-btn';                          ;
+                            'limpiar-btn'
+                            'solicitud solicitud'
+                            'solicitud-tel solicitud-tel';;                          ;
     }
 
     .h1-form{
