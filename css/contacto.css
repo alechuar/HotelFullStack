@@ -205,18 +205,6 @@ header{
     grid-area: campos;
 }
 
-.solicitud{
-    grid-area: solicitud;
-    display: flex;
-    /* color: greenyellow; */
-}
-
-.solicitud-tel{
-    grid-area: solicitud-tel;
-    display: flex;
-    /* color: greenyellow; */
-}
-
 .contenido{
     display: flex;
     flex-direction: column;
