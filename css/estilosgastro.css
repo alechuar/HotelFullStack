@@ -7,20 +7,26 @@
 }
 
 .contenedor{
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 75vw;
     max-width: 2000px;
+    min-width: 320px;
+    margin: auto;
     flex-wrap: nowrap;
+
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    height: 350px;
+    height: 850px;
     width: 100vw;
     background: linear-gradient(rgba(5, 7, 12, 0.5),rgba(5, 7, 12, 0.5)),
-    url('/img/header6.png');
+    url('/img/header4.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -30,6 +36,7 @@ header{
 .logo{
     width: 250px;
     height: 125px;
+    margin-top: 40px;
 }
 
 
@@ -62,170 +69,33 @@ header{
     display: none;
 }
 
-.item {
-    grid-area: miArea;
-}
-
-main{
+.main{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -540px;
 }
 
-#descripcion{
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    padding: 70px;
-    gap: 25px;
-    max-width: 950px;
-}
-
-
-
-
-
-
-
-.habitacines-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 100%;
-    background-color:white;
-    align-items: center;
-}
-
-#habitacion{
-    size-adjust: auto;
-    padding: 30px;
-    max-width: 100%;
-    display: flex;
-    transition: all 0.8s ease;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.foto a{
+.h1-main{
     position: relative;
-    cursor: pointer;
-    align-items: center;
-    overflow: hidden;
-    width: 70%;
-    height: 100%;
-}
-.foto a img{
-    width: 100%;
-    height: 100%;
-    transition: all 0.8s ease;
-    
-}
-
-.foto a .capa{
-    font-size: large;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0  , 0.7);
-    transition: all 0.6s ease;
-    color: white;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-
-.foto a .capa h3{
-    color: white;
-    padding-top: 110px;
-}
-.foto a .capa P{
-    color: white;
-    max-width: 80%;
-    margin: auto;
-    line-height: 1.5;
-    padding: 30px;
-}
-
-
-.foto a:hover > .capa{
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.6s ease;
-    text-align: center;
-    color: white;
-}
-
-
-.foto a:hover > img {
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.6s ease;
-    text-align: center;
-    color: white;
-    transform: scale(120%);
-}
-
-
-.foto:hover p#sobre{
-    font-size: 40px;
-}
-
-.detalles{
-    font-size: 0.9rem;
-    width: 30%;
-    height: auto;
-    background: #776f6f;
-    color: white;
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 5px;
-    flex-wrap: nowrap;
-    margin-left: -50px;
-    z-index: 2;
-}
-.detalles ul{
-    list-style: none;
-}
-
-.bg-img{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-}
-
-.bg{
-    width: 100vw;
-}
-
-.bg-img h1{
-    margin-top: -30vw;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
     color: white;
-    font-size: 2.5rem;
+    font-style: italic;
+    width: 100%;
+    max-width: 1300px;
+    padding: 80px;
+    align-content: center;
 }
 
-.bg-img .bg-flotante{
-    width: 80%;
-    margin-top: 15vw;
-}
-
-
-#info-extra{
+.contenido{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px;
-    max-width: 1000px;
-    font-size: 1.1rem;
-    color: #0394bb;
+    width: 90vw;
 }
 
 .footer{
@@ -238,7 +108,6 @@ main{
     background:url('/img/footer2.png');
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .logo-footer{
@@ -251,6 +120,64 @@ main{
     margin: 20px;
 }
 
+aside{
+    text-align: justify;
+    font-size: 2rem;
+    font-style: italic;
+    color: black;
+    width: 100%;
+    max-width: 1300px;
+    padding: 40px;
+
+}
+.image{
+    display: block;
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: antiquewhite;
+}
+.thumbnail.hover{
+    transform: translate(-4px);
+}
+.img-conteiner:hover .overlay{
+    opacity: 1;
+}
+
+.gastro-2{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    color: black;
+    width: 100%;
+    max-width: 1300px;
+    padding: 40px;
+    align-content: center;
+}
+h1{
+    font-size: 4rem
+}
+h2{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+h3{
+    font-size: 3rem;
+
+}
 
 @media (max-width: 1400px) {
 
@@ -267,13 +194,37 @@ main{
 }
 
 @media (max-width: 1250px) {
+    .formulario{
+        padding: 60px 40px;
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+        grid-template-areas:
+                            'titulo titulo titulo'
+                            'boton-form boton-form boton-form'
+                            'check-in-label . check-out-label'
+                            'check-in-input . check-out-input'
+                            'adultos-label menores-label habitaciones-label'
+                            'adultos-input menores-input habitaciones-input'
+                            'email-label email-input email-input'
+                            'cotizar cotizar cotizar'
+                            'solicitud solicitud solicitud';
+    }
+
+    .boton-form{
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+
+    .cotizar{
+        padding: 20px;
+        margin-top: 50px;
+    }
 
 }
 
 @media (max-width: 1000px) {
     header{
         padding: 70px;
-        height: 225px;
     }
 
     .logo{
@@ -282,12 +233,16 @@ main{
         margin-top: 30px;
     }
 
+    .h1-main{
+        font-size: 1rem;
+
+    }
+
     .li{
         font-size: 0.8rem;
         padding: 10px 20px 0 0 ;
         margin: 80px 0 0 20px ;
     }
-
 
 }
 
@@ -301,11 +256,6 @@ main{
         padding: 10px 10px 0 10px ;
         margin: 80px 0 0 0px ;
     }
-
-    .foto a .capa P{
-        display: none;
-       }
-       
 }
 
 
@@ -316,7 +266,6 @@ main{
         padding: 20px 20px 0 20px;
         flex-wrap: wrap;
         align-self: flex-start;
-        height: 150px;
     }
 
     .logo{
@@ -335,6 +284,7 @@ main{
         z-index: 2;
         opacity: 0;
         padding: 50px;
+        /* margin-left: 650px; */
         width: 100vw;
         transition: all .7s;
     }
@@ -364,28 +314,6 @@ main{
         padding: 35px;
     }
     
-    #descripcion{
-        padding: 60px 0 60px 0;
-    }
-
-    #habitacion{
-        flex-direction: column;
-    }
-
-    .foto a{
-        width: 100%;
-    }
-
-    .detalles{
-        margin: -5vw 0 0 0;
-        width: 70%;
-    }
-
-    .bg-img h1 {
-        font-size: 2rem;
-    }
-
-
     .social *{
         width: 30px;
         margin: 10px;
@@ -395,21 +323,10 @@ main{
 }
 
 @media (max-width: 400px) {
-
-
-    .detalles{
-        margin: 0;
-        width: 100%;
-    }
-
-
-    .bg-img h1 {
-        font-size: 1.6rem;
-    }
-
-
     .social *{
         width: 30px;
         margin: 5px;
     }
 }
+    
+    

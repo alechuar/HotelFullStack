@@ -11,10 +11,9 @@ let header = `
 
 <nav class="menu">
     <ul class="lista">
-        <li class="li"><a class="item" href="hotel.html">HOTEL</a></li>
         <li class="li"><a class="item" href="habitaciones.html">HABITACIONES</a></li>
         <li class="li"><a class="item" href="gastronomia.html">GASTRONOMIA</a></li>
-        <li class="li"><a class="item" href="promociones.html">PROMOCIONES</a></li>
+        <li class="li"><a class="item" href="contacto.html">CONTACTO</a></li>
     </ul>
 </nav>
 `; 

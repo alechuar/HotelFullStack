@@ -31,4 +31,3 @@ let footer =`
 </section>
 `;
 document.getElementById("footer").innerHTML = footer
-
