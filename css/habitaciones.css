@@ -99,7 +99,7 @@ main{
 }
 
 #habitacion1{
-    size-adjust: auto;
+  /*  size-adjust: auto;*/
     padding: 30px;
     max-width: 100%;
     display: flex;
