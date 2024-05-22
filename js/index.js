@@ -11,6 +11,7 @@ let header1 = `
 
             <nav class="menu">
                 <ul class="lista">
+                    <li class="li"><a class="item" href="index.html">HOME</a></li>
                     <li class="li"><a class="item" href="habitaciones.html">HABITACIONES</a></li>
                     <li class="li"><a class="item" href="gastronomia.html">GASTRONOMIA</a></li>
                     <li class="li"><a class="item" href="contacto.html">CONTACTO</a></li>

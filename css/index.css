@@ -62,6 +62,7 @@ header{
 
 .main{
     display: flex;
+    text-align: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: -540px;
@@ -210,19 +211,40 @@ header{
 
 
 
-.contenido{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90vw;
-}
 
 
 
 .ubicacion{
-    width: 100vw;
-    filter: grayscale(100%);
+    width: 88vw;
 }
+
+.contenedor-gastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+    flex-wrap: wrap;
+    width: 100vw;
+    gap: 20px;
+}
+
+.h2{
+    padding: 50px;
+}
+
+.image-gastro{
+    width: 500px;
+    filter: grayscale(100%);
+    transition: all ease 0.5s;
+}
+
+.image-gastro:hover{
+    scale: 120%;
+    filter: grayscale(0%);
+    position: relative;
+    z-index: 2;
+}
+
 
 
 .bg-img{
@@ -230,6 +252,7 @@ header{
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    margin-top: 80px;
 }
 
 .bg{
