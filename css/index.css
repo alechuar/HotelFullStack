@@ -278,6 +278,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     padding: 60px;
     max-width: 1000px;
     font-size: 1.1rem;

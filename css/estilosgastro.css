@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;  
+   /* font-optical-sizing: auto; */  
     scroll-behavior: smooth;
 }
 
@@ -112,6 +112,7 @@ header{
 h1{
     font-size: 1.3rem;
     margin: 0 100px 0 100px;
+    text-align: center;
 }
 
 .p-main{
@@ -130,6 +131,7 @@ h3{
 
 p{
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .contenedor-gastro{
@@ -292,10 +294,12 @@ aside{
 
     #info-extra h1{ 
         font-size: 1.4rem;
+        text-align: center;
     }
 
     #info-extra p{ 
         font-size: 1rem;
+        text-align: center;
     }
 }
 
@@ -393,10 +397,12 @@ aside{
 
     #info-extra h1{ 
         font-size: 1.2rem;
+        text-align: center;
     }
 
     #info-extra p{ 
         font-size: 1rem;
+        text-align: center;
     }
 
     
@@ -425,10 +431,12 @@ aside{
     #info-extra h1{ 
         font-size: 0.8rem;
         margin: 0;
+        text-align: center;
     }
 
     #info-extra p{ 
         font-size: 0.7rem;
+        text-align: center;
     }
 
     .p-main {
