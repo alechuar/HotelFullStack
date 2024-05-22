@@ -10,8 +10,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 2000px;
     flex-wrap: nowrap;
+    overflow: hidden;
 }
 
 header{
