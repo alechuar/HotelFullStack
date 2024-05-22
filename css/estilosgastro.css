@@ -269,6 +269,18 @@ aside{
         padding: 10px 10px 0 10px ;
         margin: 80px 0 0 0px ;
     }
+
+    .bg-img h1{
+        font-size: 1.6rem;
+    }
+
+    #info-extra h1{ 
+        font-size: 1.4rem;
+    }
+
+    #info-extra p{ 
+        font-size: 1rem;
+    }
 }
 
 
@@ -326,6 +338,28 @@ aside{
         color: white;
         padding: 35px;
     }
+
+    .bg-img h1{
+        font-size: 1rem;
+    }
+
+    .h2{
+        font-size: 1rem;
+    }
+
+
+    aside{
+        padding: 30px;
+    }
+
+    #info-extra h1{ 
+        font-size: 1.2rem;
+    }
+
+    #info-extra p{ 
+        font-size: 1rem;
+    }
+
     
     .social *{
         width: 30px;
@@ -336,6 +370,22 @@ aside{
 }
 
 @media (max-width: 400px) {
+
+    .bg-img h1{
+        font-size: 0.7rem;
+    }
+
+    #info-extra h1{ 
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    #info-extra p{ 
+        font-size: 0.7rem;
+    }
+
+
+
     .social *{
         width: 30px;
         margin: 5px;

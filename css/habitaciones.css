@@ -325,8 +325,7 @@ main{
 
     .foto a .capa P{
         display: none;
-       }
-       
+    }
 }
 
 
@@ -402,8 +401,12 @@ main{
         width: 70%;
     }
 
-    .bg-img h1 {
-        font-size: 2rem;
+    .bg-img h1{
+        font-size: 1rem;
+    }
+
+    .h2{
+        font-size: 1rem;
     }
 
 
@@ -424,10 +427,13 @@ main{
     }
 
 
-    .bg-img h1 {
-        font-size: 1.6rem;
+    .bg-img h1{
+        font-size: 0.7rem;
     }
 
+    #info-extra{
+        font-size: 0.7rem;
+    }
 
     .social *{
         width: 30px;

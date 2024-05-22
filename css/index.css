@@ -412,6 +412,10 @@ header{
         margin-top: 50px;
     }
 
+    .bg-img h1{
+        font-size: 1.9rem;
+    }
+
 
 }
 
@@ -425,6 +429,11 @@ header{
         padding: 10px 10px 0 10px ;
         margin: 80px 0 0 0px ;
     }
+
+    .bg-img h1{
+        font-size: 1.6rem;
+    }
+
 }
 
 
@@ -528,6 +537,16 @@ header{
         margin: 20px 0 0 0;
     }
 
+
+    .bg-img h1{
+        font-size: 1rem;
+    }
+
+    .h2{
+        font-size: 1rem;
+    }
+
+
     .social *{
         width: 30px;
         margin: 10px;
@@ -539,6 +558,14 @@ header{
 @media (max-width: 400px) {
     .formulario{
         padding: 20px;
+    }
+
+    .bg-img h1{
+        font-size: 0.7rem;
+    }
+
+    #info-extra{
+        font-size: 0.7rem;
     }
 
     .social *{
