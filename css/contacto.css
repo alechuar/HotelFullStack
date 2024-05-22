@@ -475,7 +475,6 @@ header{
         justify-content: center;
         align-items: center;
         text-align: center;
-        z-index: 2;
         opacity: 0;
         padding: 50px;
         /* margin-left: 650px; */
@@ -486,6 +485,7 @@ header{
     #check-btn:checked + .menu{
         /* margin-left: 0px; */
         opacity: 1;
+        z-index: 2;
     }
     
     .lista{
@@ -517,6 +517,8 @@ header{
     }
     
     .formulario{
+        position: relative;
+        z-index: 1;
         justify-content: center;
         width: 100vw;    
         grid-template-areas:
