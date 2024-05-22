@@ -437,6 +437,18 @@ header{
     .bg-img h1{
         font-size: 1.6rem;
     }
+
+    .lugar-1 h1{
+        font-size: 1.5rem;
+    }
+
+    .lugar-1 h2{
+        font-size: 1.2rem;
+    }
+
+    .lugar-1 p{
+        font-size: 1rem;
+    }
 }
 
 
@@ -549,6 +561,20 @@ header{
         margin: 20px 0 0 0;
     }
 
+
+    .lugar-1 h1{
+        font-size: 1.2rem;
+    }
+
+    .lugar-1 h2{
+        font-size: 1rem;
+    }
+
+    .lugar-1 p{
+        font-size: 0.7rem;
+    }
+
+
     .bg-img h1{
         font-size: 1rem;
     }
@@ -568,6 +594,10 @@ header{
 @media (max-width: 400px) {
     .formulario{
         padding: 20px;
+    }
+
+    .lugar-1 {
+        padding: 30px;
     }
 
     .bg-img h1{
