@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    scroll-behavior: smooth;
+   /* font-optical-sizing: auto;*/
+     scroll-behavior: smooth;
 }
 
 .contenedor{
