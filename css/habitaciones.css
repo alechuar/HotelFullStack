@@ -86,11 +86,6 @@ main{
 }
 
 
-
-
-
-
-
 .habitacines-container {
     display: flex;
     flex-direction: column;
@@ -317,6 +312,24 @@ main{
         padding: 70px 30px;
     }
 
+    #descripcion {
+        width: 100vw;
+    }
+
+    .habitacines-container div{
+        flex-direction: column;
+    }
+
+    .habitacines-container div a{
+        width: 80vw;
+    }
+
+    .habitacines-container div div{
+        width: 70vw;
+        margin: -15px 0 0 0;
+        
+    }
+
     .li{
         font-size: 0.8rem;
         padding: 10px 10px 0 10px ;
@@ -385,7 +398,11 @@ main{
     }
     
     #descripcion{
-        padding: 60px 0 60px 0;
+        padding: 60px 35px;
+    }
+
+    #descripcion p{
+        font-size: 0.8rem;
     }
 
     #habitacion{
@@ -402,7 +419,7 @@ main{
     }
 
     .bg-img h1{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .h2{
@@ -420,15 +437,32 @@ main{
 
 @media (max-width: 400px) {
 
-
-    .detalles{
-        margin: 0;
-        width: 100%;
+    #descripcion{
+        padding: 40px 20px;
     }
 
+    #descripcion h2{
+        font-size: 1.2rem;
+    }
+
+    #descripcion h3{
+        font-size: 1rem;
+    }
+
+    #descripcion p{
+        font-size: 0.7rem;
+    }
+
+    .habitacines-container div div h4{
+        font-size: 0.8rem;
+    }
+
+    .habitacines-container div div li{
+        font-size: .7rem;
+    }
 
     .bg-img h1{
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
     #info-extra{
