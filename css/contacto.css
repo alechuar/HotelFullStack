@@ -507,6 +507,10 @@ header{
         color: white;
         padding: 35px;
     }
+
+    .main{
+        margin-top: -150px;
+    }
     
     .h1-main{
         font-size: 1rem;
@@ -520,7 +524,7 @@ header{
         position: relative;
         z-index: 1;
         justify-content: center;
-        width: 100vw;    
+        /* width: 100vw;     */
         grid-template-areas:
                             'titulo'
                             'nom-label'
