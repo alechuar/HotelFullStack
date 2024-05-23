@@ -98,13 +98,17 @@ header{
     width: 100vw;
 }
 
-.h1-main{
+.h1-main {
+    justify-content: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
+    align-items: center;
     color: white;
-    width: 100%;
-    max-width: 1300px;
+    width: 95vw;
+    flex-wrap: wrap;
+    max-width: 1450px;
+    gap: 30px;
     align-items: center;
 }
 
@@ -145,7 +149,7 @@ p{
 }
 
 .image-gastro{
-    width: 500px;
+    width: 450px;
     filter: grayscale(100%);
     transition: all ease 0.5s;
 }
